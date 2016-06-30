@@ -1,1 +1,7 @@
 apply plugin: 'war'
+
+task deploy(type: Copy) {
+    from 'build/libs/booklen.war'
+    into 'c:/seu/wlp/usr/servers/defaultServer/dropins'
+}
+
